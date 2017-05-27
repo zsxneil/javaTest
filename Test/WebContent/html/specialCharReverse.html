@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/Test/js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+function escape(a) {  
+    a = a ? a : '';  
+    return a.replace(/</g, "\x26lt;").replace(/>/g, "\x26gt;").replace("/\x26/g", "\x26amp;").replace(/"/g, "\x26quot;").replace(/'/g,"&#39;");  
+} 
+
+function  unescape(a) {  
+    a = a ? a : '';  
+    return a.replace(/&lt;/g, "\x3c").replace(/&gt;/g, "\x3e").replace(/&amp;/g, "\x26").replace(/&quot;/g, '"');  
+} 
+ jQuery(function() {
+	
+	alert(jQuery("#test").val());
+}) 
+</script>
+</head>
+<body>
+<input id="test" value='&quot; &amp; &#39;'/>
+</body>
+</html>
