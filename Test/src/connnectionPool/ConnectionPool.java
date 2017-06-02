@@ -4,15 +4,13 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.Driver;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Enumeration;
 import java.util.UUID;
 import java.util.Vector;
-
-import com.mysql.jdbc.PreparedStatement;
-import com.mysql.jdbc.StringUtils;
 
 import jdk.nashorn.internal.objects.annotations.Constructor;
 

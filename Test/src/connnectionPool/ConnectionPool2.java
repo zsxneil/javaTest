@@ -14,10 +14,7 @@ import java.util.Random;
 import java.util.UUID;
 import java.util.Vector;
 
-import com.mysql.jdbc.PreparedStatement;
-import com.mysql.jdbc.StringUtils;
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
 
 public class ConnectionPool2 {
 
